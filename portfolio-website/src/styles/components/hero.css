@@ -1,0 +1,76 @@
+.heroContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to top right, #0cdbff, #c2c2c2);
+}
+
+.title {
+  color: white;
+  text-align: center;
+}
+
+h1#hello {
+  font-size: 8rem;
+  font-weight: 800;
+  margin: 12px;
+}
+h2 {
+  font-weight: 200;
+  font-size: 2rem;
+}
+
+.rotatingText {
+  overflow: hidden;
+  width: 600px;
+}
+.rotatingText p {
+  font-size: 2rem;
+  font-weight: 100;
+  white-space: nowrap;
+}
+
+
+#manchester {
+  background-color: yellow;
+}
+#london {
+  background-color: red;
+  color: white;
+}
+
+.textPortfolio {
+  position: absolute;
+  bottom: 50px;
+  left: 3vw;
+  font-size: 1rem;
+}
+
+.scrollButton {
+  position: absolute;
+  bottom: 20px;
+  right: 50vw;
+  z-index: 999;
+  background-color: transparent;
+  border: none;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.scrollButton::before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: solid #000000;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  margin: 10px;
+}
+
+.scrollButton:hover {
+  transform: translateY(-5px);
+}

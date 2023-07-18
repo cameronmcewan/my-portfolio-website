@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+section {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+}
+
+.portfolioContainer {
+  width: 100vw;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.homePage {
+  background-color: white;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  color: black;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 15vw;
+  margin-right: 15vw;
+}
+
+h2 {
+  font-size: 5rem;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+p {
+  font-size: 2rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.portfolio {
+  display: flex;
+  justify-content: space-between;
+  color: #000000;
+}

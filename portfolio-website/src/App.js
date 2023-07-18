@@ -1,25 +1,31 @@
 import React from 'react';
-import './App.css';
-import Header from './components/header/Header';
+import './styles/app.css';
+import Hero from './sections/Hero';
+import Portfolio from './sections/Portfolio';
+import Header from './components/Header';
+// import Project from './components/Project';
+// import FolioLogo from './assets/images/Folio.svg';
+
 
 function App() {
+
   return (
-    <div>
-      <header>
-        <Header/>
-      </header>
-      <section className="content">
-        <h2>About Me</h2>
-        <p>Insert your bio here.</p>
-      </section>
-      <section className="content">
-        <h2>Projects</h2>
-        <ul>
-          <li>Project 1</li>
-          <li>Project 2</li>
-          <li>Project 3</li>
-        </ul>
-      </section>
+    <div className='portfolioContainer'>
+
+      <Header />
+
+      <Hero id='homeSection'/>
+
+      {/* <section>
+        <Project
+          title="Folio: Decentralised Application for creating and trading index funds as a digital token"
+          description="Full stack application involving front end development, smart contract development and deployment with AWS. I presented the project at the FinTech West Conference: University Talent Showcase 2022 and the project was awarded Best Project."
+          imgSrc={FolioLogo}
+        />
+      </section> */}
+
+      <Portfolio id='portfolioSection'/>
+
     </div>
   );
 }
