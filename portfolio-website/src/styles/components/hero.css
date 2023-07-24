@@ -1,4 +1,4 @@
-.heroContainer {
+.hero {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,18 +8,32 @@
 
 .title {
   color: white;
-  text-align: center;
-
-  .title1 {
-    font-size: 8rem;
-    font-weight: 800;
-    margin: 12px;
-  }
-  .title2 {
-    font-weight: 200;
-    font-size: 2rem;
-  }
+  display: flex;
+  flex-direction: column;
+  max-width: 80vw;
 }
+
+  .topline {
+    display: flex;
+    flex-direction: column;
+  }
+  .topline .title1 {
+      font-size: 5rem;
+      font-weight: 700;
+    }
+
+  .topline .title2 {
+      font-size: 1rem;
+      font-weight: 400;
+      text-align: justify;
+    }
+  
+
+  .bottomline{
+    display: flex;
+    justify-content: center;
+  }
+
 
 
 

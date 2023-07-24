@@ -12,29 +12,19 @@ function Hero() {
     }
   };
 
-  // // Rotating Text
-  // const texts = ['a Front-end Developer', 'a Smart Contract Developer', 'an AI Developer', 'a Data Scientist']; // Array of text values
-  // const [currentTextIndex, setCurrentTextIndex] = useState(0);
-
-  // useEffect(() => {
-  //     const interval = setInterval(() => {
-  //         setCurrentTextIndex((prevIndex) => (prevIndex + 1) % texts.length);
-  //     }, 1500);
-
-  //     return () => clearInterval(interval);
-  // }, [texts.length]);
-  // // .
-
   return (
-    <section className='heroContainer'>
+    <section className='hero'>
+
       <div className='title'>
-        <div className='title1'>Hello</div>
-        {/* <h2>My name is Cameron McEwan... <div className='rotatingText'>I'm {texts[currentTextIndex]}</div></h2> */}
+        <div className='topline'>
+          <div className='title1'>Front End Developer</div>
+          <div className='title2'>My name is Cameron McEwan. I was born in Manchester, studied in Bristol, and now based in London. Primarily a front-end developer with a broad skillset. I love AI, web3 and creating beautiful things for the web.</div>
+        </div>
+        <div className='bottomline'>
+          <InfiniteScroll />
+        </div>
       </div>
-      <InfiniteScroll />
-      
-      {/* <p>Born in <mark id='manchester'> MANCHESTER</mark> and based in <mark id='london'> LONDON</mark>.</p> */}
-      
+            
       <div>
         <p className='textPortfolio'>Portfolio 2023</p>
       </div>
