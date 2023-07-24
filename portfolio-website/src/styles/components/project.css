@@ -1,7 +1,0 @@
-.projectSection {
-    display: grid 2fr 1fr;
-}
-
-.image {
-    grid-column: 0 1fr;
-}

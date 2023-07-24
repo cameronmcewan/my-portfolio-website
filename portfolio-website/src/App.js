@@ -1,10 +1,8 @@
 import React from 'react';
 import './styles/app.css';
 import Hero from './sections/Hero';
-import Portfolio from './sections/Portfolio';
+import Projects from './sections/Projects';
 import Header from './components/Header';
-// import Project from './components/Project';
-// import FolioLogo from './assets/images/Folio.svg';
 
 
 function App() {
@@ -24,7 +22,7 @@ function App() {
         />
       </section> */}
 
-      <Portfolio id='portfolioSection'/>
+      <Projects id='projectsSection'/>
 
     </div>
   );

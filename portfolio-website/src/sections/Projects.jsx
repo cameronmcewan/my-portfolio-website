@@ -1,12 +1,13 @@
 import React from 'react';
 import '../styles/app.css';
+import '../styles/components/projects.css';
 import FolioLogo from '../assets/images/Folio.svg';
 
 const projects = [
   {
     id: 1,
-    title: 'Folio',
-    description: 'Decentralised Index Funds',
+    title: 'Folio DApp',
+    description: 'Full stack application involving front end development, smart contract development and deployment with AWS. I presented the project at the FinTech West Conference: University Talent Showcase 2022 and the project was awarded Best Project.',
     image: FolioLogo,
   },
   {
@@ -25,19 +26,24 @@ const projects = [
 ];
 
 const ProjectSection = ({ title, description, image }) => (
-  <section>
-    <img src={image} alt={title} />
-    <h3>{title}</h3>
-    <p>{description}</p>
+  <section id='projectsSection'>
+    <div className='projectContainer'>
+      <div className='leftContainer'>
+        <h2>{title}</h2>
+        <p>{description}</p>
+      </div>
+      <div className='rightContainer'>
+        <img src={image} alt={title} />    
+      </div>
+    </div>
   </section>
 
 );
 
-function Portfolio() {
+function Projects() {
   return (
 
-    <div className="portfolio">
-
+    <div>
       {projects.map(project => (
         <ProjectSection
           key={project.id}
@@ -46,10 +52,9 @@ function Portfolio() {
           image={project.image}
         />
       ))}
-
     </div>
 
   );
 }
 
-export default Portfolio;
+export default Projects;

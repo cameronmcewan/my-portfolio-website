@@ -1,0 +1,25 @@
+.projectContainer {
+    display: flex;
+    width: 70vw;
+    background-color: #023047;
+    color: white;
+    border-radius: 40px;
+    overflow: hidden;
+    padding: 60px;
+}
+.projectContainer:hover {
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+}
+
+.projectContainer .leftContainer {
+    flex: 2;
+}
+
+.projectContainer .leftContainer p {
+    font-size: 1rem;
+    font: 400;
+}
+
+.projectContainer .rightContainer {
+    flex: 1;
+}
