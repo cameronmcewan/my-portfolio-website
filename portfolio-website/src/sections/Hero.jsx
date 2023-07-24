@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/components/hero.css';
+import InfiniteScroll from '../components/InfiniteScroll';
 
 function Hero() {
 
@@ -11,25 +12,26 @@ function Hero() {
     }
   };
 
-  // Rotating Text
-  const texts = ['a Front-end Developer', 'a Smart Contract Developer', 'an AI Developer', 'a Data Scientist']; // Array of text values
-  const [currentTextIndex, setCurrentTextIndex] = useState(0);
+  // // Rotating Text
+  // const texts = ['a Front-end Developer', 'a Smart Contract Developer', 'an AI Developer', 'a Data Scientist']; // Array of text values
+  // const [currentTextIndex, setCurrentTextIndex] = useState(0);
 
-  useEffect(() => {
-      const interval = setInterval(() => {
-          setCurrentTextIndex((prevIndex) => (prevIndex + 1) % texts.length);
-      }, 1500);
+  // useEffect(() => {
+  //     const interval = setInterval(() => {
+  //         setCurrentTextIndex((prevIndex) => (prevIndex + 1) % texts.length);
+  //     }, 1500);
 
-      return () => clearInterval(interval);
-  }, [texts.length]);
-  // .
+  //     return () => clearInterval(interval);
+  // }, [texts.length]);
+  // // .
 
   return (
     <section className='heroContainer'>
       <div className='title'>
-        <h1 id='hello'>Hello</h1>
-        <h2>My name is Cameron McEwan... <div className='rotatingText'>I'm {texts[currentTextIndex]}</div></h2>
+        <div className='title1'>Hello</div>
+        {/* <h2>My name is Cameron McEwan... <div className='rotatingText'>I'm {texts[currentTextIndex]}</div></h2> */}
       </div>
+      <InfiniteScroll />
       
       {/* <p>Born in <mark id='manchester'> MANCHESTER</mark> and based in <mark id='london'> LONDON</mark>.</p> */}
       

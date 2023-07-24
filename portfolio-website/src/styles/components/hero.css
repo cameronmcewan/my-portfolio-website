@@ -9,17 +9,19 @@
 .title {
   color: white;
   text-align: center;
+
+  .title1 {
+    font-size: 8rem;
+    font-weight: 800;
+    margin: 12px;
+  }
+  .title2 {
+    font-weight: 200;
+    font-size: 2rem;
+  }
 }
 
-h1#hello {
-  font-size: 8rem;
-  font-weight: 800;
-  margin: 12px;
-}
-h2 {
-  font-weight: 200;
-  font-size: 2rem;
-}
+
 
 .rotatingText {
   overflow: hidden;
