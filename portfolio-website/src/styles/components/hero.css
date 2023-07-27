@@ -32,6 +32,10 @@
   .bottomline{
     display: flex;
     justify-content: center;
+    border-radius: 50px;
+    background-color: #170051;
+    width: fit-content;
+
   }
 
 

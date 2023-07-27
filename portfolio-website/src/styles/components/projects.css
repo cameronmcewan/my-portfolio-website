@@ -1,14 +1,16 @@
 .projectContainer {
     display: flex;
     width: 70vw;
+    height: 50vh;
     background-color: #023047;
     color: white;
     border-radius: 40px;
     overflow: hidden;
     padding: 60px;
+    box-shadow: 0 0 50px rgb(0, 0, 0);
 }
 .projectContainer:hover {
-    box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 70px rgb(0, 0, 0);
 }
 
 .projectContainer .leftContainer {

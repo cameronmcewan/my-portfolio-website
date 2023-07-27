@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/components/hero.css';
 import InfiniteScroll from '../components/InfiniteScroll';
+import Logo from '../components/Logo';
 
 function Hero() {
 
@@ -14,6 +15,8 @@ function Hero() {
 
   return (
     <section className='hero'>
+
+      <Logo />
 
       <div className='title'>
         <div className='topline'>

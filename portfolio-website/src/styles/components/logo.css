@@ -1,0 +1,59 @@
+/* .logo {
+    position: relative;
+    width: 200px;
+    height: 200px;
+  }
+  
+  .letter {
+    position: absolute;
+    color: #333;
+  }
+  
+  .m {
+    font-size: 60px;
+    font-weight: 100;
+    left: 50px;
+    top: 80px;
+    animation: logo-animation-m 2s infinite;
+  }
+  
+  .c {
+    font-size: 200px;
+    font-weight: 900;
+    left: 0;
+    top: 0;
+    animation: logo-animation-c 1.5s infinite;
+  }
+  
+  @keyframes logo-animatio-m {
+    0% { transform: rotate(360deg); }
+    100% { transform: rotate(0deg); }
+  }
+
+  @keyframes logo-animation-c {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+   */
+
+
+
+   .introText {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #444;
+    text-align: center;
+  }
+  
+  .items {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .item {
+    font-size: 2rem;
+    color: #555;
+  }
+  
