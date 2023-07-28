@@ -1,12 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import '../styles/components/hero.css';
-import InfiniteScroll from '../components/InfiniteScroll';
-import Logo from '../components/Logo';
 
 function Hero() {
 
-  const handleScrollClick = () => {
-    const homeSection = document.getElementById('projectsSection');
+  const handleClick = () => {
+    const homeSection = document.getElementById('homeSection');
     if (homeSection) {
       console.log('Scrolling to top');
       homeSection.scrollIntoView({ behavior: 'smooth' });
@@ -27,7 +25,7 @@ function Hero() {
       </div>
             
       <div>
-        <button className='scrollButton' onClick={handleScrollClick}/>
+        <button className='scrollButton' onClick={handleClick}/>
       </div>
     </section>
 

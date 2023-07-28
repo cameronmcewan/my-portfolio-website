@@ -14,18 +14,18 @@ function Gutter() {
 
     return (
         <div className='gutter'>
-            <h1 onClick={ handleClick } className='logo'>camm.dev</h1>
+            <h1 onClick={ handleClick } className='logo'>CAMM.DEV</h1>
 
 
             <div className='social-icons'>
                 <a href="https://github.com/cameronmcewan" target="_blank" rel="noreferrer">
-                <FaGithub className="icon github" />
+                    <FaGithub className="icon github" />
                 </a>
                 <a href="https://twitter.com/cammcewan_" target="_blank" rel="noreferrer">
-                <FaTwitter className="icon twitter" />
+                    <FaTwitter className="icon twitter" />
                 </a>
                 <a href="https://www.linkedin.com/in/cameron-mcewan/" target="_blank" rel="noreferrer">
-                <FaLinkedin className="icon linkedin" />
+                    <FaLinkedin className="icon linkedin" />
                 </a>
             </div>
 
