@@ -21,10 +21,6 @@ section {
   height: 100vh;
 }
 
-.homePage {
-  background-color: white;
-}
-
 .content {
   display: flex;
   justify-content: center;

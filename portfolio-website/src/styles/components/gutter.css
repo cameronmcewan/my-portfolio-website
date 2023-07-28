@@ -1,0 +1,55 @@
+.gutter {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  flex-shrink: 0;
+  height: 100vh;
+  width: 100px;
+  z-index: 9999;
+}
+
+.logo {
+  color: navy;
+  font-size: 0.9rem;
+  font-weight: 300;
+  height: 100%;
+  padding-top: 20px;
+  cursor: pointer;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-self: flex-end;
+  gap: 15px;
+}
+
+.vline {
+  border-left: 1px solid navy;
+  max-height: 300px;
+  height: 100%;
+  margin-bottom: 20px;
+}
+    
+.social-icons .icon {
+  font-size: 2rem;
+  transition: all 0.5s ease;
+  color: navy;
+}
+
+.social-icons .icon.github:hover {
+  transform: rotate(360deg) scale(1.2);
+}
+
+.social-icons .icon.twitter:hover {
+  transform: rotate(-10deg) scale(1.2);
+}
+
+.social-icons .icon.linkedin:hover {
+  transform: skew(10deg) scale(1.2);
+} 
+

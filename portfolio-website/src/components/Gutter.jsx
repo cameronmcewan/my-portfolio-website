@@ -1,9 +1,9 @@
 import React from 'react';
-import '../styles/components/header.css';
+import '../styles/components/gutter.css';
 import { FaGithub, FaTwitter, FaLinkedin } from 'react-icons/fa';
 
 
-function Header() {
+function Gutter() {
 
     const handleClick = () => {
         const homeSection = document.getElementById('homeSection');
@@ -13,8 +13,9 @@ function Header() {
       };
 
     return (
-        <header>
-            <h1 onClick={ handleClick } className='name'>camm.dev</h1>
+        <div className='gutter'>
+            <h1 onClick={ handleClick } className='logo'>camm.dev</h1>
+
 
             <div className='social-icons'>
                 <a href="https://github.com/cameronmcewan" target="_blank" rel="noreferrer">
@@ -27,8 +28,10 @@ function Header() {
                 <FaLinkedin className="icon linkedin" />
                 </a>
             </div>
-        </header>
+
+            <div className='vline'></div>
+        </div>
     )
 }
 
-export default Header;
+export default Gutter;

@@ -1,9 +1,3 @@
-/* .logo {
-    position: relative;
-    width: 200px;
-    height: 200px;
-  }
-  
   .letter {
     position: absolute;
     color: #333;
@@ -34,26 +28,6 @@
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
   }
-   */
+  
 
 
-
-   .introText {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #444;
-    text-align: center;
-  }
-  
-  .items {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-bottom: 2rem;
-  }
-  
-  .item {
-    font-size: 2rem;
-    color: #555;
-  }
-  

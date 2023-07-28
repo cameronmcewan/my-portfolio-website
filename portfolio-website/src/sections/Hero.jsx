@@ -16,21 +16,16 @@ function Hero() {
   return (
     <section className='hero'>
 
-      <Logo />
-
       <div className='title'>
         <div className='topline'>
-          <div className='title1'>Front End Developer</div>
-          <div className='title2'>My name is Cameron McEwan. I was born in Manchester, studied in Bristol, and now based in London. Primarily a front-end developer with a broad skillset. I love AI, web3 and creating beautiful things for the web.</div>
+          <div className='title1'>Hi, I'm <span className='color'>Cameron McEwan</span>.</div>
+          <div className='title2'>I design and implement beautiful, flowing websites. Born in Manchester, studied in Bristol, and now based in London. I love AI, web3 and creating beautiful things for the web.</div>
         </div>
-        <div className='bottomline'>
+        {/* <div className='bottomline'>
           <InfiniteScroll />
-        </div>
+        </div> */}
       </div>
             
-      <div>
-        <p className='textPortfolio'>Portfolio 2023</p>
-      </div>
       <div>
         <button className='scrollButton' onClick={handleScrollClick}/>
       </div>

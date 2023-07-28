@@ -3,11 +3,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(to top right, #0cdbff, #c2c2c2);
+  /* background: linear-gradient(to top right, white, yellow); */
+  background: white;
 }
 
 .title {
-  color: white;
+  color: navy;
   display: flex;
   flex-direction: column;
   max-width: 80vw;
@@ -16,11 +17,15 @@
   .topline {
     display: flex;
     flex-direction: column;
+    max-width: 700px;
   }
   .topline .title1 {
-      font-size: 5rem;
-      font-weight: 700;
+    font-size: 5rem;
+    font-weight: 700;
     }
+  .topline .title1 .color {
+    color: orange;
+  }
 
   .topline .title2 {
       font-size: 1rem;
